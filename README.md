@@ -14,6 +14,53 @@
 
 [2019-02-25~2019-03-01](2019/2019.02.25-2019.03.01.md)
 
+**2019-04-24**
+
+[1] Re-ID文章
+
+论文题目：Interpretable and Generalizable Deep Image Matching with Adaptive Convolutions
+
+作者：Shengcai Liao and Ling Shao
+
+论文链接：https://arxiv.org/abs/1904.10424
+
+摘要: For image matching tasks, like face recognition and person re-identification, existing deep networks often focus on representation learning. However, without domain adaptation or transfer learning, the learned model is fixed as is, which is not adaptable to handle various unseen scenarios. In this paper, beyond representation learning, we consider how to formulate image matching directly in deep feature maps. We treat image matching as finding local correspondences in feature maps, and construct adaptive convolution kernels on the fly to achieve local matching. In this way, the matching process and result is interpretable, and this explicit matching is more generalizable than representation features to unseen scenarios, such as unknown misalignments, pose or viewpoint changes. To facilitate end-to-end training of such an image matching architecture, we further build a class memory module to cache feature maps of the most recent samples of each class, so as to compute image matching losses for metric learning. The proposed method is preliminarily validated on the person re-identification task. Through direct cross-dataset evaluation without further transfer learning, it achieves better results than many transfer learning methods. Besides, a model-free temporal cooccurrence based score weighting method is proposed, which improves the performance to a further extent, resulting in state-of-the-art results in cross-dataset evaluation.
+
+[2] 基于CornerNet和CenterNet的Visual Tracking文章
+
+论文题目：Siamese Attentional Keypoint Network for High Performance Visual Tracking
+
+作者：Peng Gao, Yipeng Ma, Ruyue Yuan, Liyi Xiao, Fei Wang
+
+论文链接：https://arxiv.org/abs/1904.10128
+
+摘要: In this paper, we investigate impacts of three main aspects of visual tracking, i.e., the backbone network, the attentional mechanism and the detection component, and propose a Siamese Attentional Keypoint Network, dubbed SATIN, to achieve efficient tracking and accurate localization. Firstly, a new Siamese lightweight hourglass network is specifically designed for visual tracking. It takes advantage of the benefits of the repeated bottom-up and top-down inference to capture more global and local contextual information at multiple scales. Secondly, a novel cross-attentional module is utilized to leverage both channel-wise and spatial intermediate attentional information, which enhance both discriminative and localization capabilities of feature maps. Thirdly, a keypoints detection approach is invented to track any target object by detecting the top-left corner point, the centroid point and the bottom-right corner point of its bounding box. To the best of our knowledge, we are the first to propose this approach. Therefore, our SATIN tracker not only has a strong capability to learn more effective object representations, but also computational and memory storage efficiency, either during the training or testing stage. Without bells and whistles, experimental results demonstrate that our approach achieves state-of-the-art performance on several recent benchmark datasets, at speeds far exceeding the frame-rate requirement.
+
+
+**2019-04-23**
+
+[1] NAS for face
+
+论文题目：Neural Architecture Search for Deep Face Recognition
+
+作者：Ning Zhu, Xiaolong Bai
+
+论文链接：https://arxiv.org/abs/1904.09523
+
+摘要: By the widespread popularity of electronic devices, the emergence of biometric technology has brought significant convenience to user authentication compared with the traditional password and mode unlocking. Among many biological characteristics, the face is a universal and irreplaceable feature that does not need too much cooperation and can significantly improve the user's experience at the same time. Face recognition is one of the main functions of electronic equipment propaganda. Hence it's virtually worth researching in computer vision. Previous work in this field has focused on two directions: converting loss function to improve recognition accuracy in traditional deep convolution neural networks (Resnet); combining the latest loss function with the lightweight system (MobileNet) to reduce network size at the minimal expense of accuracy. But none of these has changed the network structure. With the development of AutoML, neural architecture search (NAS) has shown excellent performance in the benchmark of image classification. In this paper, we integrate NAS technology into face recognition to customize a more suitable network. We quote the framework of neural architecture search which trains child and controller network alternately. At the same time, we mutate NAS by incorporating evaluation latency into rewards of reinforcement learning and utilize policy gradient algorithm to search the architecture automatically with the most classical cross-entropy loss. The network architectures we searched out have got state-of-the-art accuracy in the large-scale face dataset, which achieves 98.77% top-1 in MS-Celeb-1M and 99.89% in LFW with relatively small network size. To the best of our knowledge, this proposal is the first attempt to use NAS to solve the problem of Deep Face Recognition and achieve the best results in this domain.
+
+[2] 一种新的Normalization方法SW
+
+论文题目：Switchable Whitening for Deep Representation Learning
+
+作者：Xingang Pan, Xiaohang Zhan, Jianping Shi, Xiaoou Tang, Ping Luo
+
+论文链接：https://arxiv.org/abs/1904.09739
+
+摘要: Normalization methods are essential components in convolutional neural networks (CNNs). They either standardize or whiten data using statistics estimated in predefined sets of pixels. Unlike existing works that design normalization techniques for specific tasks, we propose Switchable Whitening (SW), which provides a general form unifying different whitening methods as well as standardization methods. SW learns to switch among these operations in an end-to-end manner. It has several advantages. First, SW adaptively selects appropriate whitening or standardization statistics for different tasks (see Fig.1), making it well suited for a wide range of tasks without manual design. Second, by integrating benefits of different normalizers, SW shows consistent improvements over its counterparts in various challenging benchmarks. Third, SW serves as a useful tool for understanding the characteristics of whitening and standardization techniques. We show that SW outperforms other alternatives on image classification (CIFAR-10/100, ImageNet), semantic segmentation (ADE20K, Cityscapes), domain adaptation (GTA5, Cityscapes), and image style transfer (COCO). For example, without bells and whistles, we achieve state-of-the-art performance with 45.33% mIoU on the ADE20K dataset. Code and models will be released.
+
+
+
 **2019-04-03**
 
 [1] FAIR Kaiming等人的NAS文章
